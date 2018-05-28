@@ -1,0 +1,55 @@
+/*-- セルの色（要素）--*/
+.date2{
+	padding-left: 5px;
+	background-color: #9999ff;
+	font-size: 14px;
+}
+.event{
+	padding-left: 5px;
+	background-color: #9999dd;
+	font-size: 14px;
+}
+.place{
+	padding-left: 5px;
+	background-color: #9999bb; 
+	font-size: 14px;
+}
+.comment{
+	background-color: #999999; 
+	font-size: 14px;
+	text-align: center;
+}
+/*-- セルの色（見出し）--*/
+.tdate{
+	background-color: #6666ff;
+	width:20%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tevent{
+	background-color: #6666dd;
+	width:35%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tplace{
+	background-color: #6666bb;
+	width:30%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.tcomment{
+	background-color: #666699;
+	width:10%;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+.year{
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+}
