@@ -23,7 +23,7 @@ def main(Num):
 
 	dataframes[Num].to_csv(name + '_track.csv')
 
-
+#着順を
 def heatnumAndRankSet(df):
 	for idx, row in enumerate(df['着順']):
 
@@ -44,6 +44,17 @@ def heatnumAndRankSet(df):
 
 	return df
 
+#一番小さい桁が一桁の時なんとかする
+#引数のnumはstring型
+def digitsAdjust(num):
+
+	if len(num) == 1:
+
+		num = num + '0'
+
+	return num
+
+
 def timeSet(df):
 	for idx, row in enumerate(df['記録']):
 
@@ -58,13 +69,13 @@ def timeSet(df):
 
 			df.at[idx+1, 'record_m'] = row.split('\'')[0]
 			df.at[idx+1, 'record_s'] = row.split('\'')[1].split('\"')[0]
-			df.at[idx+1, 'record_cs'] = row.split('\'')[1].split('\"')[1]
+			df.at[idx+1, 'record_cs'] = digitsAdjust(row.split('\'')[1].split('\"')[1])
 			df.at[idx+1, 'comment'] = df.at[idx+1, com]
 
 		elif '\"' in row:
 
 			df.at[idx+1, 'record_s'] = row.split('\"')[0]
-			df.at[idx+1, 'record_cs'] = row.split('\"')[1]
+			df.at[idx+1, 'record_cs'] = digitsAdjust(row.split('\"')[1])
 
 			if '/' in df.at[idx+1, com] and df.at[idx+1, com].split('/')[0].replace('-', '').replace('+', '').replace('.', '').isnumeric():
 
