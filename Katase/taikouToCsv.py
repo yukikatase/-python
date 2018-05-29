@@ -7,7 +7,7 @@ def main(Num):
 
 	dataframes[Num] = columnRename(dataframes[Num])
 
-	dataframes[Num] = addCompetitionName(dataframes[Num])
+	dataframes[Num] = addEventName(dataframes[Num])
 
 	dataframes[Num] = appendRows(dataframes[Num])
 
@@ -17,13 +17,36 @@ def main(Num):
 
 	dataframes[Num] = timeSet(dataframes[Num])
 
-	dataframes[Num] = heatnumAndRankSet(dataframes[Num])
+	if len(dataframes[Num].columns) == 23:
 
-	print(dataframes[Num])
+		dataframes[Num] = heatnumAndRankSet(dataframes[Num])
 
-	dataframes[Num].to_csv(name + '_track.csv')
+	else:
 
-#着順を
+		dataframes[Num] = heatnumSet(dataframes[Num])
+		dataframes[Num] = rankSet(dataframes[Num])
+
+	dataframes[Num].to_csv(competition_name + '.csv')
+
+#組をセット
+def heatnumSet(df):
+	for idx, row in enumerate(df['組']):
+		df.at[idx+1, 'heatnum'] = row
+
+	return df
+
+#着順をセット
+def rankSet(df):
+	for idx, row in enumerate(df['着順']):
+			if '着' in row:
+				df.at[idx+1, 'rank'] = row.split('着')[0]
+
+			elif '等' in row:
+				df.at[idx+1, 'rank'] = row.split('等')[0]
+
+	return df
+
+#組着順をセット
 def heatnumAndRankSet(df):
 	for idx, row in enumerate(df['着順']):
 
@@ -54,7 +77,7 @@ def digitsAdjust(num):
 
 	return num
 
-
+#記録と備考をセット
 def timeSet(df):
 	for idx, row in enumerate(df['記録']):
 
@@ -102,7 +125,7 @@ def timeSet(df):
 				df.at[idx+1, 'wind'] = float(df.at[idx+1, com].split('/')[0])
 				df.at[idx+1, 'comment'] = df.at[idx+1, com].split('/')[1]
 
-			elif not('-' in df.at[idx+1, com]):
+			elif not('-' in df.at[idx+1, com]) and df.at[idx+1, com].replace('-', '').replace('+', '').replace('.', '').isnumeric():
 
 				df.at[idx+1, 'wind'] = float(df.at[idx+1, com])
 				df.at[idx+1, 'comment'] = '-'
@@ -121,11 +144,17 @@ def timeSet(df):
 
 	return df
 
-#種目名のOPを除去
+#種目名のOP、予選などを除去
 def eventSet(df):
 	for idx, row in enumerate(df['種目']):
 	
 		df.at[idx+1, '種目'] = row.split()[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].split('OP')[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].split('予選')[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].split('準決')[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].split('決勝')[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].split('TR')[0]
+		df.at[idx+1, '種目'] = df.at[idx+1, '種目'].replace('女子', '')
 
 	return df
 
@@ -151,7 +180,7 @@ def roundSet(df):
 
 		elif '女子' in row:
 
-			df.at[idx+1, 'round'] = 1
+			df.at[idx+1, 'gender'] = 1
 
 		#人力ソーン始まり
 		else:
@@ -199,7 +228,7 @@ def columnRename(df):
 
 #rowspanの関係で種目名がない人たちがいる
 #その人たちに種目名を追加
-def addCompetitionName(df):
+def addEventName(df):
 	for idx, row in enumerate(df['種目']):
 
 		#種目列にちゃんと種目名が入っている場合はスルー
@@ -215,11 +244,11 @@ def addCompetitionName(df):
 
 
 if __name__ == '__main__':
-	competition_name = '農工戦'
-	date = '2018-03-17'
-	place = '新座'
-	electric_timing = 0
-	official = 0
+	competition_name = '第13回13大学対校戦'
+	date = '2016-06-12'
+	place = '町田'
+	electric_timing = 1
+	official = 1
 	com = '風･備考'
 
-	main(5)
+	main(8)

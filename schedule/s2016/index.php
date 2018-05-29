@@ -508,16 +508,16 @@
 <tr><td rowspan="1" align="center">200m予選</td><td>5</td><td>天野　皓平</td><td align="right">22"08</td><td align="center">5着</td><td align="center">+1.1</td></tr>
 <tr><td rowspan="1" align="center">400m予選</td><td>1</td><td>高橋　知也</td><td align="right">DNS</td><td align="center">-</td><td align="center">-</td></tr>
 
-<tr><td rowspan="1" align="center">110mH予選</td><td>2</td><td rowspan="3">永島　唯哉</td><td align="right">14"86</td><td align="center">3着</td><td align="center">-0.7/Q</td></tr>
-<tr><td rowspan="1" align="center">準決勝</td><td>2</td><td align="right">14"86</td><td align="center">4着</td><td align="center">-0.4/q</td></tr>
-<tr><td rowspan="1" align="center">決勝</td><td>1</td><td align="right">14"63</td><td align="center">6着</td><td align="center">-0.9/6位入賞</td></tr>
+<tr><td rowspan="1" align="center">110mH予選</td><td>2</td><td>永島　唯哉</td><td align="right">14"86</td><td align="center">3着</td><td align="center">-0.7/Q</td></tr>
+<tr><td rowspan="1" align="center">110mH準決勝</td><td>2</td><td>永島　唯哉</td><td align="right">14"86</td><td align="center">4着</td><td align="center">-0.4/q</td></tr>
+<tr><td rowspan="1" align="center">110mH決勝</td><td>1</td><td>永島　唯哉</td><td align="right">14"63</td><td align="center">6着</td><td align="center">-0.9/6位入賞</td></tr>
 
-<tr><td rowspan="1" align="center">3部1500m決勝</td><td>1</td><td>松井　将器</td><td align="right">3'56"62</td><td align="center">1着</td><td align="center">GR/優勝</td></tr>
+<tr><td rowspan="1" align="center">1500m決勝</td><td>1</td><td>松井　将器</td><td align="right">3'56"62</td><td align="center">1着</td><td align="center">3部GR/3部優勝</td></tr>
 
-<tr><td rowspan="1" align="center">3部5000m決勝</td><td>1</td><td>松井　将器</td><td align="right">14'19"97</td><td align="center">1着</td><td align="center">GR/優勝</td></tr>
+<tr><td rowspan="1" align="center">5000m決勝</td><td>1</td><td>松井　将器</td><td align="right">14'19"97</td><td align="center">1着</td><td align="center">3部GR/3部優勝</td></tr>
 
 <TR><TD align="center" rowspan="1">走高跳決勝</TD><td>1</td><TD>小林　拓己</TD><TD align="right">2m00</TD><TD align="center">5等</TD><TD align="center">5位入賞</TD></TR>
-<TR><TD align="center" rowspan="1">3部走幅跳決勝</TD><td>1</td><TD>刈田　浩平</TD><TD align="right">7m16</TD><TD align="center">4等</TD><TD align="center">-0.2/歴代4位</TD></TR>
+<TR><TD align="center" rowspan="1">走幅跳決勝</TD><td>1</td><TD>刈田　浩平</TD><TD align="right">7m16</TD><TD align="center">4等</TD><TD align="center">-0.2/歴代4位/3部</TD></TR>
 <tr><td rowspan="1" align="center">4×100mR予選</td><td>3</td><td>天野　皓平<br>西嶋　健人<br>永井　生<br>永島　唯哉</td><td align="right">41"94</td><td align="center">5着</td><td align="center">-</td></tr>
 
 <tr><td rowspan="1" align="center">4×400mR予選</td><td>2</td><td>高橋　知也<br>天野　皓平<br>中嶋　一貴<br>中村　勇太</td><td align="right">3'20"74</td><td align="center">5着</td><td align="center">歴代20位</td></tr>
@@ -731,7 +731,7 @@
 <TR><TD align="center" rowspan="3">	走高跳決勝	</TD><TD>	1	</TD><TD>	小林　拓己	</TD><TD align="right">	2m04	</TD><TD align="center">	1等	</TD><TD align="center">	優勝/大会新記録	</TD></TR>
 		<TR><TD>	1	</TD><TD>	足達　哲也	</TD><TD align="right">	1m70	</TD><TD align="center">	8等	</TD><TD align="center">	8位入賞	</TD></TR>
 		<TR><TD>	1	</TD><TD>	小河　雅広	</TD><TD align="right">	DNS	</TD><TD align="center">	-	</TD><TD align="center">	-	
-<TR><TD align="center" rowspan="1">	三段跳決勝	</TD><TD>	1	</TD><TD>	櫛田　優	</TD><TD align="right">	12m23	</TD><TD align="center">	-	</TD><TD align="center">	+ 2.2/<br>公認記録12m13(+1.1)	</TD></TR>
+<TR><TD align="center" rowspan="1">	三段跳決勝	</TD><TD>	1	</TD><TD>	櫛田　優	</TD><TD align="right">	12m23	</TD><TD align="center">	-	</TD><TD align="center">	+2.2/<br>公認記録12m13(+1.1)	</TD></TR>
 <TR><TD align="center" rowspan="1">	円盤投決勝	</TD><TD>	1	</TD><TD>	久保　謙太	</TD><TD align="right">	26m69	</TD><TD align="center">	-	</TD><TD align="center">	-	</TD></TR>
 <TR><TD align="center" rowspan="1">	やり投決勝	</TD><TD>	1	</TD><TD>	福井　義光	</TD><TD align="right">	34m02	</TD><TD align="center">	-	</TD><TD align="center">	-	</TD></TR>
 <TR><TD align="center" rowspan="2">	砲丸投決勝	</TD><TD>	1	</TD><TD>	土田　周治	</TD><TD align="right">	9m01	</TD><TD align="center">	-	</TD><TD align="center">	PB	</TD></TR>
